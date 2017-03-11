@@ -23,7 +23,13 @@ $.ajax({
 
 for(var i = 0; i < topics.length; i ++){
 	var buttons = $('<button>' + topics[i] + '</button>');
+	buttons.addClass('buttonTopic');
 	$('#buttons').append(buttons);
 	console.log(topics[i]);
 }
 });
+
+//when user clicks on a topic button, page should return gifs for topic
+   $('button').on('click', function(){
+   		results.html();
+   })
